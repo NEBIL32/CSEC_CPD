@@ -1,0 +1,11 @@
+nstd_fenceh= (input()) 
+std_height = (input())
+n_f = nstd_fenceh.split()
+s_h = std_height.split()
+r_width=0
+for i in range(len(s_h)):
+	if int(s_h[i])<=int(n_f[1]):
+		r_width += 1
+	else:
+		r_width += 2
+print(r_width)
