@@ -1,0 +1,8 @@
+s=input().lower()
+so=input().lower()
+if s < so:
+	print("-1")
+elif s > so:
+	print("1")
+else:
+	print("0")
