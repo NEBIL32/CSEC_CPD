@@ -1,0 +1,14 @@
+def gravity_flip(boxes):
+    # Sort the boxes in non-decreasing order
+    boxes.sort()
+    return boxes
+
+# Input reading
+n = int(input())  # Number of boxes
+boxes = list(map(int, input().split()))  # Heights of the boxes
+
+# Get the result after the gravity flip
+sorted_boxes = gravity_flip(boxes)
+
+# Output the sorted box heights
+print(" ".join(map(str, sorted_boxes)))
