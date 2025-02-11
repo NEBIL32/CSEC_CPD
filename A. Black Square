@@ -1,0 +1,5 @@
+calories = list(map(int, input().split()))  
+sequence = input().strip()  
+total_calories = sum(calories[int(c) - 1] for c in sequence)
+
+print(total_calories)
