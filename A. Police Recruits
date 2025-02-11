@@ -1,0 +1,16 @@
+n = int(input())  
+events = list(map(int, input().split()))  
+
+police = 0  
+unsolved_crimes = 0  
+
+for event in events:
+    if event > 0:  
+        police += event  # New recruits join
+    else:  
+        if police > 0:  
+            police -= 1  # Solve the crime
+        else:  
+            unsolved_crimes += 1  # No police available
+
+print(unsolved_crimes)
