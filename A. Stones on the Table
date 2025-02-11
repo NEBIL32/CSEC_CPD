@@ -1,0 +1,8 @@
+ns=int(input())
+c=input().strip()
+c=c.upper()
+cout=0
+for i in range(1,ns):
+	if c[i]==c[i-1]:
+		cout+=1
+print(cout)
