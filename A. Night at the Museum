@@ -1,0 +1,11 @@
+word = input().strip()  
+
+current_position = 'a'  
+total_moves = 0  
+
+for letter in word:
+    distance = abs(ord(letter) - ord(current_position))  
+    total_moves += min(distance, 26 - distance)  
+    current_position = letter  
+
+print(total_moves)
