@@ -1,0 +1,10 @@
+s = input().strip()
+t = input().strip()
+
+pos = 0  # Start at the first stone (0-based index)
+
+for move in t:
+    if pos < len(s) and move == s[pos]:
+        pos += 1  # Move to the next stone
+
+print(pos + 1)  # Convert to 1-based index
