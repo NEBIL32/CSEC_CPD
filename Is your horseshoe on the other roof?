@@ -1,0 +1,7 @@
+horseshoes = list(map(int, input().split()))  
+
+# Count unique colors
+unique_colors = len(set(horseshoes))  
+
+# Minimum horseshoes to buy = 4 - unique colors
+print(4 - unique_colors)
