@@ -1,0 +1,10 @@
+import math
+
+Y, W = map(int, input().split())
+
+best_roll = max(Y, W)
+favorable_outcomes = 6 - best_roll + 1  # Numbers from best_roll to 6
+
+# Reduce the fraction
+gcd = math.gcd(favorable_outcomes, 6)
+print(f"{favorable_outcomes // gcd}/{6 // gcd}")
